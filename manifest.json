@@ -1,6 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Youtube Default Title",
+  "description": "Resets the translated titles of YouTube videos back to the original language.",
   "version": "0.1",
   "permissions": [
     "tabs",
@@ -9,8 +10,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.youtube.com/*",
-        "http://www.youtube.com/*"
+        "<all_urls>"
       ],
       "js": [
         "content.js"
